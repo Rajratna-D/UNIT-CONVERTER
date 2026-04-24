@@ -13,7 +13,6 @@ A simple yet powerful command-line unit converter written in Python. Convert bet
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
