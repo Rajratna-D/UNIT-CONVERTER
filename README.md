@@ -17,7 +17,7 @@ A simple yet powerful command-line unit converter written in Python. Convert bet
 
 ---
 
-## 📖 About
+##  About
 
 **Unit Converter** is a beginner-friendly Python CLI application that allows users to perform common unit conversions across three categories: Length, Time, and Temperature. The program runs in a continuous loop, letting users perform multiple conversions in a single session without restarting.
 
@@ -34,7 +34,7 @@ A simple yet powerful command-line unit converter written in Python. Convert bet
 
 ---
 
-## 📐 Supported Conversions
+##  Supported Conversions
 
 ### Length
 | # | Conversion |
@@ -60,7 +60,7 @@ A simple yet powerful command-line unit converter written in Python. Convert bet
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -86,7 +86,7 @@ A simple yet powerful command-line unit converter written in Python. Convert bet
 
 ---
 
-## 💻 Usage
+##  Usage
 
 Once the program starts, you'll see the main menu:
 
