@@ -1,10 +1,10 @@
-# 🔢 Unit Converter
+#  Unit Converter
 
 A clean, modular command-line unit converter built in Python. Supports 5 conversion categories with 57 total conversions, split across two files for easy maintenance and scalability.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Python-Unit-Converter/
@@ -15,7 +15,7 @@ Python-Unit-Converter/
 
 ---
 
-## ✨ Features
+##  Features
 
 - **5 conversion categories** — Length, Time, Temperature, Weight, Speed
 - **57 total conversions** across all categories
@@ -26,9 +26,9 @@ Python-Unit-Converter/
 
 ---
 
-## 📦 Categories & Conversions
+##  Categories & Conversions
 
-### 📏 Length (16 conversions)
+###  Length (16 conversions)
 | # | Conversion |
 |---|---|
 | 1 | Meter → Centimeter |
@@ -48,7 +48,7 @@ Python-Unit-Converter/
 | 15 | Yard → Meter |
 | 16 | Meter → Yard |
 
-### ⏱️ Time (15 conversions)
+###  Time (15 conversions)
 | # | Conversion |
 |---|---|
 | 1 | Seconds → Minutes |
@@ -67,7 +67,7 @@ Python-Unit-Converter/
 | 14 | Milliseconds → Seconds |
 | 15 | Seconds → Milliseconds |
 
-### 🌡️ Temperature (6 conversions)
+###  Temperature (6 conversions)
 | # | Conversion |
 |---|---|
 | 1 | Celsius → Fahrenheit |
@@ -77,7 +77,7 @@ Python-Unit-Converter/
 | 5 | Fahrenheit → Kelvin |
 | 6 | Kelvin → Fahrenheit |
 
-### ⚖️ Weight (14 conversions)
+###  Weight (14 conversions)
 | # | Conversion |
 |---|---|
 | 1 | Kilogram → Gram |
@@ -95,7 +95,7 @@ Python-Unit-Converter/
 | 13 | Ton → Kilogram |
 | 14 | Kilogram → Ton |
 
-### 🚀 Speed (8 conversions)
+###  Speed (8 conversions)
 | # | Conversion |
 |---|---|
 | 1 | km/h → m/s |
@@ -109,7 +109,7 @@ Python-Unit-Converter/
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 **Requirements:** Python 3.13.6 (no external libraries needed)
 
@@ -123,7 +123,7 @@ python main.py
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ### `conversions.py`
 Stores all conversion data as dictionaries. Each entry maps a choice number to a tuple of:
@@ -139,7 +139,7 @@ choice_number: (lambda v: formula, "unit", "Label → Label")
 
 ---
 
-## 🔧 How to Add a New Conversion
+##  How to Add a New Conversion
 
 **Step 1** — Add a new entry in `conversions.py`:
 ```python
@@ -158,7 +158,7 @@ That's it — no other changes needed!
 
 ---
 
-## 🔧 How to Add a New Category
+##  How to Add a New Category
 
 **Step 1** — Add a new dictionary in `conversions.py`:
 ```python
@@ -181,7 +181,7 @@ elif a == 6:
 
 ---
 
-## 👤 Author
+##  Author
 
 **Rajratna Dhiwar**  
 Python Unit Converter Project
