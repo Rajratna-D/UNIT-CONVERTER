@@ -1,141 +1,187 @@
-# Unit Converter
+# 🔢 Unit Converter
 
-A simple yet powerful command-line unit converter written in Python. Convert between units of Length, Time, and Temperature with ease.
-
----
-
-# Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Supported Conversions](#supported-conversions)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
+A clean, modular command-line unit converter built in Python. Supports 5 conversion categories with 57 total conversions, split across two files for easy maintenance and scalability.
 
 ---
 
-##  About
+## 📁 Project Structure
 
-**Unit Converter** is a beginner-friendly Python CLI application that allows users to perform common unit conversions across three categories: Length, Time, and Temperature. The program runs in a continuous loop, letting users perform multiple conversions in a single session without restarting.
-
----
-
-## Features
-
-- Continuous loop — convert as many values as you want in one session
-- Length conversions
-- Time conversions
-- Temperature conversions
-- Input validation with informative error messages
-- Clean and minimal terminal interface
+```
+Python-Unit-Converter/
+│
+├── conversions.py    # All conversion dictionaries (data layer)
+└── main.py           # Menus, logic, and program entry point
+```
 
 ---
 
-##  Supported Conversions
+## ✨ Features
 
-### Length
+- **5 conversion categories** — Length, Time, Temperature, Weight, Speed
+- **57 total conversions** across all categories
+- **Modular design** — data separated from logic
+- **Lambda functions** — every formula stored uniformly in dictionaries
+- **Single reusable function** — `run_converter()` handles all categories
+- **Continuous loop** — keeps running until the user chooses to exit
+
+---
+
+## 📦 Categories & Conversions
+
+### 📏 Length (16 conversions)
 | # | Conversion |
-|---|-----------|
+|---|---|
 | 1 | Meter → Centimeter |
 | 2 | Centimeter → Meter |
+| 3 | Meter → Kilometer |
+| 4 | Kilometer → Meter |
+| 5 | Meter → Mile |
+| 6 | Mile → Meter |
+| 7 | Meter → Foot |
+| 8 | Foot → Meter |
+| 9 | Meter → Inch |
+| 10 | Inch → Meter |
+| 11 | Kilometer → Mile |
+| 12 | Mile → Kilometer |
+| 13 | Foot → Inch |
+| 14 | Inch → Foot |
+| 15 | Yard → Meter |
+| 16 | Meter → Yard |
 
-### Time
+### ⏱️ Time (15 conversions)
 | # | Conversion |
-|---|-----------|
+|---|---|
 | 1 | Seconds → Minutes |
 | 2 | Minutes → Hours |
 | 3 | Hours → Days |
 | 4 | Days → Years |
+| 5 | Minutes → Seconds |
+| 6 | Hours → Minutes |
+| 7 | Days → Hours |
+| 8 | Years → Days |
+| 9 | Seconds → Hours |
+| 10 | Seconds → Days |
+| 11 | Minutes → Days |
+| 12 | Weeks → Days |
+| 13 | Days → Weeks |
+| 14 | Milliseconds → Seconds |
+| 15 | Seconds → Milliseconds |
 
-### Temperature
+### 🌡️ Temperature (6 conversions)
 | # | Conversion |
-|---|-----------|
+|---|---|
 | 1 | Celsius → Fahrenheit |
 | 2 | Fahrenheit → Celsius |
 | 3 | Celsius → Kelvin |
 | 4 | Kelvin → Celsius |
+| 5 | Fahrenheit → Kelvin |
+| 6 | Kelvin → Fahrenheit |
+
+### ⚖️ Weight (14 conversions)
+| # | Conversion |
+|---|---|
+| 1 | Kilogram → Gram |
+| 2 | Gram → Kilogram |
+| 3 | Kilogram → Pound |
+| 4 | Pound → Kilogram |
+| 5 | Kilogram → Ounce |
+| 6 | Ounce → Kilogram |
+| 7 | Gram → Pound |
+| 8 | Pound → Gram |
+| 9 | Gram → Ounce |
+| 10 | Ounce → Gram |
+| 11 | Pound → Ounce |
+| 12 | Ounce → Pound |
+| 13 | Ton → Kilogram |
+| 14 | Kilogram → Ton |
+
+### 🚀 Speed (8 conversions)
+| # | Conversion |
+|---|---|
+| 1 | km/h → m/s |
+| 2 | m/s → km/h |
+| 3 | km/h → mph |
+| 4 | mph → km/h |
+| 5 | m/s → mph |
+| 6 | mph → m/s |
+| 7 | Knot → km/h |
+| 8 | km/h → Knot |
 
 ---
 
-##  Getting Started
+## ▶️ How to Run
 
-### Prerequisites
+**Requirements:** Python 3.x (no external libraries needed)
 
-- Python 3.13.6 installed on your system
-- No external libraries required — uses only Python built-ins
+1. Clone or download the project folder
+2. Make sure both `main.py` and `conversions.py` are in the **same folder**
+3. Open a terminal in that folder and run:
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Rajratna-D/UNIT-CONVERTER.git
-   ```
-
-2. **Navigate to the project directory**
-   ```bash
-   cd UNIT-CONVERTER
-   ```
-
-3. **Run the program**
-   ```bash
-   python main.py
-   ```
-
----
-
-##  Usage
-
-Once the program starts, you'll see the main menu:
-
-```
-UNIT CONVERTER
-1: Length
-2: Time
-3: Temperature
-0: Exit
-Enter your choice:
-```
-
-Select a category, then choose a specific conversion, and enter your value. The result is displayed instantly.
-
-**Example:**
-```
-Enter your choice: 3
-1: Celsius to Fahrenheit
-2: Fahrenheit to Celsius
-3: Celsius to Kelvin
-4: Kelvin to Celsius
-Enter your choice: 1
-Enter your value: 100
-Celsius to Fahrenheit = 212.0 F
-```
-
-Enter `0` at the main menu to exit the program.
-
----
-
-## Project Structure
-
-```
-UNIT-CONVERTER/
-│
-└── main.py        # Main application file containing all converter functions
+```bash
+python main.py
 ```
 
 ---
 
-## Contributing
+## 🧠 How It Works
 
-Contributions are welcome! If you'd like to add more unit categories (e.g., Weight, Speed, Area) or improve the interface:
+### `conversions.py`
+Stores all conversion data as dictionaries. Each entry maps a choice number to a tuple of:
+```python
+choice_number: (lambda v: formula, "unit", "Label → Label")
+```
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Open a Pull Request
+### `main.py`
+- Imports all dictionaries from `conversions.py`
+- Defines a single `run_converter(title, menu, conversions)` function
+- Uses a `while True` loop to keep the program running
+- Calls `run_converter()` with the appropriate data based on the user's category choice
 
+---
 
+## 🔧 How to Add a New Conversion
 
-<p align="center">Made with love by <a href="https://github.com/Rajratna-D">Rajratna-D</a></p>
+**Step 1** — Add a new entry in `conversions.py`:
+```python
+# Example: adding Meter → Millimeter to length_conversions
+17: (lambda v: v * 1000, "mm", "Meter → Millimeter"),
+```
+
+**Step 2** — Add it to the menu string in `main.py`:
+```python
+length_menu = """
+    ...
+    17: Meter → Millimeter"""
+```
+
+That's it — no other changes needed!
+
+---
+
+## 🔧 How to Add a New Category
+
+**Step 1** — Add a new dictionary in `conversions.py`:
+```python
+area_conversions = {
+    1: (lambda v: v * 10000, "cm²", "Meter² → Centimeter²"),
+    ...
+}
+```
+
+**Step 2** — Import it in `main.py`:
+```python
+from conversions import (..., area_conversions)
+```
+
+**Step 3** — Add a menu string and a new `elif` in the main loop:
+```python
+elif a == 6:
+    run_converter("AREA CONVERTER", area_menu, area_conversions)
+```
+
+---
+
+## 👤 Author
+
+**Rajratna Dhiwar**  
+Python Unit Converter Project
