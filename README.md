@@ -111,7 +111,7 @@ Python-Unit-Converter/
 
 ## ▶️ How to Run
 
-**Requirements:** Python 3.x (no external libraries needed)
+**Requirements:** Python 3.13.6 (no external libraries needed)
 
 1. Clone or download the project folder
 2. Make sure both `main.py` and `conversions.py` are in the **same folder**
